@@ -9,9 +9,9 @@
     "generate-qr": "node generate-qr.js"
   },
   "devDependencies": {
+    "qrcode": "^1.5.4",
     "vite": "^5.0.0",
-    "vite-plugin-image-optimizer": "^1.1.7",
-    "qrcode": "^1.5.3"
+    "vite-plugin-image-optimizer": "^1.1.7"
   },
   "description": "",
   "main": "index.js",
