@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-width=1.0" />
+  <title>Menú Larimar Coffee Bar</title>
+  <meta name="description" content="Menú digital de Larimar Coffee Bar en Barahona" />
+  <link rel="stylesheet" href="/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <div id="home-view" class="view-container active">
+    <header class="header">
+      <img src="/logo.jpg" alt="Logo Larimar Coffee Bar" class="logo" />
+      <h1>Bienvenido a <span>Larimar Coffee Bar</span></h1>
+      <p>Café, desayuno y opciones fit en Barahona</p>
+      
+      <button id="view-menu-btn" class="primary-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+        Ver Menú
+      </button>
+      <footer class="home-footer">
+        <p>&copy; 2026 Larimar Coffee Bar. Todos los derechos reservados.</p>
+      </footer>
+    </header>
+    </header>
+  </div>
+
+  <div id="menus-view" class="view-container">
+    <div class="menu-nav">
+      <button id="back-btn" class="icon-btn" aria-label="Volver">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        Inicio
+      </button>
+      <h2>Larimar Menú</h2>
+      <div style="width: 24px;"></div>
+    </div>
+
+    <!-- Tabs for Menus -->
+    <div class="tabs-container">
+      <button class="tab-btn active" data-target="tab-bebidas">Bebidas</button>
+      <button class="tab-btn" data-target="tab-desayunos">Desayunos</button>
+      <button class="tab-btn" data-target="tab-saludable">Saludable</button>
+      <button class="tab-btn" data-target="tab-snacks">Snacks & Postres</button>
+    </div>
+
+    <div class="menu-content-container">
+      <!-- BEBIDAS TAB -->
+      <div id="tab-bebidas" class="menu-section active">
+        <!-- Cafe y Frappes -->
+        <h3 class="section-title">Café y Frappes</h3>
+        <div class="menu-list">
+<div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Espresso</span><span class="item-price">$120</span></div>
+            <p class="item-desc">Café de especialidad Larimar, intenso y aromático.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Matcha Latte</span><span class="item-price">$200</span></div>
+            <p class="item-desc">Té matcha de grado premium con leche cremosa.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Americano</span><span class="item-price">$150</span></div>
+            <p class="item-desc">Espresso suavizado con agua caliente, sabor balanceado.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Cappuchino</span><span class="item-price">$180</span></div>
+            <p class="item-desc">Equilibrio perfecto de espresso, leche al vapor y espuma sedosa.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Latte</span><span class="item-price">$200</span></div>
+            <p class="item-desc">Suave combinación de espresso con abundante leche cremosa.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Affogato</span><span class="item-price">$290</span></div>
+            <p class="item-desc">Espresso caliente vertido sobre una bola de helado de vainilla.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Mocaccino</span><span class="item-price">$220</span></div>
+            <p class="item-desc">Deliciosa mezcla de chocolate, espresso y leche cremosa.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Carajillo Agitado</span><span class="item-price">$250</span></div>
+            <p class="item-desc">Combinación perfecta de espresso y licor, agitado para un final espumoso.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Cafe Tradicional</span><span class="item-price">$75</span></div>
+            <p class="item-desc">El clásico café dominicano, tostado y molido en casa.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Frappe De Cafe</span><span class="item-price">$280</span></div>
+            <p class="item-desc">Bebida helada a base de café, mezclada a la perfección.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Frappe De Chocolate</span><span class="item-price">$280</span></div>
+            <p class="item-desc">Granizado cremoso de chocolate intenso con un toque de crema.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Frappe De Oreo</span><span class="item-price">$280</span></div>
+            <p class="item-desc">Mezcla helada cremosa con trozos crujientes de galleta Oreo.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Frappe De Pistacho</span><span class="item-price">$320</span></div>
+            <p class="item-desc">Frappé gourmet con el sabor único y sofisticado del pistacho.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Frappe De Nutella</span><span class="item-price">$280</span></div>
+            <p class="item-desc">Irresistible mezcla helada de Nutella original y leche.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Frappe De Fresa</span><span class="item-price">$250</span></div>
+            <p class="item-desc">Refrescante frappé de fresas naturales y base cremosa.</p>
+          </div>
+        </div>
+
+        <!-- Batidos -->
+        <h3 class="section-title">Batidos</h3>
+        <div class="menu-list">
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Guineo</span><span class="item-price">$125</span></div>
+            <p class="item-desc">Leche, Guineo, Chocolate, Creema de Maní</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Fresa</span><span class="item-price">$150</span></div>
+            <p class="item-desc">Leche, Fresa, Crema de Maní</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Guineo Y Fresa</span><span class="item-price">$180</span></div>
+            <p class="item-desc">Leche, Fresa, Guineo, Crema de Maní</p>
+          </div>
+        </div>
+
+        <!-- Detox -->
+        <h3 class="section-title">Detox</h3>
+        <div class="menu-list">
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Jugo Verde</span><span class="item-price">$125</span></div>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Shot Desinflamatorio Zanahoria</span><span class="item-price">$90</span></div>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Shot De Remolacha</span><span class="item-price">$90</span></div>
+          </div>
+        </div>
+
+        <!-- Jugos y Bebidas -->
+        <h3 class="section-title">Jugos y Bebidas</h3>
+        <div class="menu-list">
+<div class="menu-item-text"><div class="item-header"><span class="item-name">Zanahoria Con Limon</span><span class="item-price">$125</span></div><p class="item-desc">Jugo fresco de zanahoria con un toque cítrico de limón.</p></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Remolacha Con Limon</span><span class="item-price">$125</span></div><p class="item-desc">Energizante natural de remolacha y limón.</p></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Agua</span><span class="item-price">$25</span></div><p class="item-desc">Agua mineral purificada.</p></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Agua De Coco</span><span class="item-price">$75</span></div><p class="item-desc">Agua de coco 100% natural y refrescante.</p></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Fresa</span><span class="item-price">$150</span></div><p class="item-desc">Jugo natural de fresas seleccionadas.</p></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">China</span><span class="item-price">$75</span></div><p class="item-desc">Jugo de naranja natural recién exprimido.</p></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Chinola</span><span class="item-price">$75</span></div><p class="item-desc">Jugo natural de maracuyá (chinola).</p></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Cereza</span><span class="item-price">$75</span></div><p class="item-desc">Refrescante jugo natural de cerezas.</p></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Limon</span><span class="item-price">$75</span></div><p class="item-desc">Limonada natural hecha al momento.</p></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Chinola Con Fresa</span><span class="item-price">$125</span></div><p class="item-desc">Mezcla tropical de maracuyá y fresas naturales.</p></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Piña Con Fresa</span><span class="item-price">$125</span></div><p class="item-desc">Combinación dulce y refrescante de piña y fresa.</p></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Mango Con Chinola</span><span class="item-price">$100</span></div><p class="item-desc">Dulce sabor del mango con el toque ácido de la chinola.</p></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Limon Con Menta</span><span class="item-price">$75</span></div><p class="item-desc">Limonada ultra-refrescante con hojas de menta fresca.</p></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Morirsoñando</span><span class="item-price">$175</span></div><p class="item-desc">Tradicional bebida dominicana de leche y naranja.</p></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Guineo</span><span class="item-price">$75</span></div><p class="item-desc">Jugo suave de guineo (banana).</p></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Piña Y Coco</span><span class="item-price">$100</span></div><p class="item-desc">Sabor tropical de piña y coco natural.</p></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Limonada De Coco</span><span class="item-price">$125</span></div><p class="item-desc">Cremosa mezcla de limón y leche de coco.</p></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Cocada</span><span class="item-price">$150</span></div><p class="item-desc">Bebida premium ultra-cremosa de coco.</p></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Patillazo Refrescante</span><span class="item-price">$150</span></div><p class="item-desc">Jugo natural de sandía (patilla) bien frío.</p></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Limon, Menta, Sandia</span><span class="item-price">$100</span></div><p class="item-desc">El mix definitivo para el calor: limón, menta y sandía.</p></div>
+        </div>
+      </div>
+
+      <!-- DESAYUNOS TAB -->
+      <div id="tab-desayunos" class="menu-section">
+        <!-- Waffles y Pancakes -->
+        <h3 class="section-title">Waffle y Pancakes</h3>
+        <div class="menu-list">
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Waffle Mañanero</span><span class="item-price">$320</span></div>
+            <p class="item-desc">Waffle, queso cheddar, huevos revueltos, tocineta, tomates cherry, queso fundido y syrup.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Swett Waffle</span><span class="item-price">$380</span></div>
+            <p class="item-desc">Waffle, frutas tropicales, chocolate, caramelo, crema batida, coco y cherry.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Waffle Frio</span><span class="item-price">$380</span></div>
+            <p class="item-desc">Waffle, caramelo, nutella, chocolate, galletas oreo trituradas, y una bola de helado.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Pancake Americano</span><span class="item-price">$400</span></div>
+            <p class="item-desc">Pancake, huevos revueltos o a la plancha, salchichas de desayuno, tocineta y syrup.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Larimar Pancake</span><span class="item-price">$380</span></div>
+            <p class="item-desc">Trio de pancake, caramelo, chocolate, nutella, kiwi, fresa, crema batida con coco rayado y cherrys.</p>
+          </div>
+        </div>
+
+        <!-- Croissant -->
+        <h3 class="section-title">Croissant</h3>
+        <div class="menu-list">
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Croissant Basico</span><span class="item-price">$130</span></div>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Larimar Croissant</span><span class="item-price">$390</span></div>
+            <p class="item-desc">Croissant, pesto, mozarrella, prosciutto, cream chesse.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Morning Croissant</span><span class="item-price">$350</span></div>
+            <p class="item-desc">Croissant, queso cheddar, huevos revueltos, tocineta, tomates cherry, queso fundiddo.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Croissant Pavo Y Mozarrella</span><span class="item-price">$380</span></div>
+            <p class="item-desc">Croissant, cream chesse, lechuga, tomate, jamon de pavo y queso mozarrella.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Croissant Swett</span><span class="item-price">$295</span></div>
+            <p class="item-desc">Croissant, nutella, guineo, fresa, leche condensada.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Croissant Cream Chesse / Mermelada</span><span class="item-price">$320</span></div>
+            <p class="item-desc">Croissant, cream chesse y mermelada al gusto.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SALUDABLE TAB -->
+      <div id="tab-saludable" class="menu-section">
+        <!-- Ligero y Saludable -->
+        <h3 class="section-title">Ligero y Saludable</h3>
+        <div class="menu-list">
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Tostada De Aguacate</span><span class="item-price">$190</span></div>
+            <p class="item-desc">Pan, aguacate, huevo a la plancha.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Tostada De Aguacate Larimar</span><span class="item-price">$290</span></div>
+            <p class="item-desc">Pan, aguacate, prosciutto, tomates cherry salteados, queso mozarrella, rucula.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Omelette Pavo Y Mozarrella</span><span class="item-price">$290</span></div>
+            <p class="item-desc">Tortilla de 3 huevos rellena de jamon de pavo y queso mozarrlla, acompañado de pan blanco.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Ful Omelette</span><span class="item-price">$330</span></div>
+            <p class="item-desc">Tortilla de 3 huevos rellena de tocineta, tomate, cebolla, jamon de pavo, queso mozarrella, acompañado de pan blanco.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Keto Verde</span><span class="item-price">$190</span></div>
+            <p class="item-desc">2 huevos hervidos o a la plancha, aguacate y 2 tiras de bacon.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Sandwich De Atun</span><span class="item-price">$340</span></div>
+            <p class="item-desc">Pan blanco relleno de dip de atun.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Sandwich Larimar</span><span class="item-price">$340</span></div>
+            <p class="item-desc">Huevo, jamon, queso, bacon.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Sandwich De Pollo</span><span class="item-price">$340</span></div>
+            <p class="item-desc">Dip de pollo fresco, pan blanco.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Pechuga A La Plancha</span><span class="item-price">$450</span></div>
+            <p class="item-desc">Pechuga de pollo a la plancha servida con batata, sazonadas y pico de gallo.</p>
+          </div>
+        </div>
+
+        <!-- Ensaladas y Wraps -->
+        <h3 class="section-title">Ensaladas y Wraps</h3>
+        <div class="menu-list">
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Ensalada Cesar De Pollo</span><span class="item-price">$450</span></div>
+            <p class="item-desc">Tiras de pechuga a la plancha, tomates cherry, croutones, salsa cesar, lechuga, queso parmesano.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Ensalada Larimar</span><span class="item-price">$450</span></div>
+            <p class="item-desc">Cuadritos de pechuga a la plancha, huevo hervido, tocineta, lechuga, bolitas de queso mozarrella, croutones, queso parmesano.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Larimar Wrap</span><span class="item-price">$440</span></div>
+            <p class="item-desc">Tortilla, lechuga, tiras de pechuga a la plancha, tocineta, maiz, salsa de la casa, croutones, tomate.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Wrap De Pavo Y Mozarrella</span><span class="item-price">$390</span></div>
+            <p class="item-desc">Tortilla, lechuga, cream chesse, tomate, tocineta, jamon de pavo, queso mozarrella.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Wrap Proteico</span><span class="item-price">$390</span></div>
+            <p class="item-desc">Tortilla, huevo, aguacate, atun, lechuga, tomate cherry.<br>Elije tortilla de trigo, espinaca o tomate.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SNACKS TAB -->
+      <div id="tab-snacks" class="menu-section">
+        <!-- Postres -->
+        <h3 class="section-title">Postres</h3>
+        <div class="menu-list">
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Roles De Canela</span><span class="item-price">$210</span></div></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Choco Flan</span><span class="item-price">$280</span></div></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Flan Tradicional</span><span class="item-price">$220</span></div></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Browni</span><span class="item-price">$180</span></div></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Chesscake Pistacho, Chinola Frutos Rojo</span><span class="item-price">$350</span></div></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Bizcocho De Zanahoria</span><span class="item-price">$280</span></div></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Banana Bread</span><span class="item-price">$190</span></div></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Carlota De Limon</span><span class="item-price">$240</span></div></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Carlota De Cafe</span><span class="item-price">$260</span></div></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Galletas De Mantequilla</span><span class="item-price">$75</span></div></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Galleta De Avena</span><span class="item-price">$75</span></div></div>
+        </div>
+
+        <!-- Entradas -->
+        <h3 class="section-title">Entradas</h3>
+        <div class="menu-list">
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Taquitos De Pollo</span><span class="item-price">$390</span></div>
+            <p class="item-desc">Pechuga de pollo, queso fundido, queso cheddar rayado, guacamole y pico de gallo.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Taquitos De Res</span><span class="item-price">$390</span></div>
+            <p class="item-desc">Res molida, salsa de ajo, queso cheddar, pico de gallo, guacamole.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Cielito Lindo De Res</span><span class="item-price">$390</span></div>
+            <p class="item-desc">Cream chesse, res molida, salsa de la casa, queso fundido, pico de gallo, guacamole, nachos.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Bolas De Queso Cheddar</span><span class="item-price">$260</span></div>
+            <p class="item-desc">4 unidades.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Pa Picar</span><span class="item-price">$290</span></div>
+            <p class="item-desc">Dip de queso crema y frutos secos y galletas o nachos o tortillas desidratadas.</p>
+          </div>
+        </div>
+
+        <!-- Frutas y Nueces -->
+        <h3 class="section-title">Frutas y Nueces</h3>
+        <div class="menu-list">
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Bowl De Yogurt, Nueces Y Frutas</span><span class="item-price">$290</span></div>
+            <p class="item-desc">Granola, yogurt griego, frutas de temporada, miel, chia.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Bowl De Frutas Mixtas</span><span class="item-price">$100-$180</span></div>
+            <p class="item-desc">Frutas de temporada, miel.</p>
+          </div>
+          <div class="menu-item-text">
+            <div class="item-header"><span class="item-name">Vaso De Yogurt, Nueces Y Frutas</span><span class="item-price">$140</span></div>
+            <p class="item-desc">Granola, yogurt, frutas, chia, miel.</p>
+          </div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Mix De Nueces Y Frutos Secos</span><span class="item-price">$125</span></div></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Barra De Proteina 10g</span><span class="item-price">$75</span></div></div>
+          <div class="menu-item-text"><div class="item-header"><span class="item-name">Barra De Proteina 10g (Otra)</span><span class="item-price">$50</span></div></div>
+        </div>
+      </div>
+      
+      <p class="tax-note">* Impuestos no incluidos</p>
+      <footer class="menu-footer">
+        <p>&copy; 2026 Larimar Coffee Bar. Todos los derechos reservados.</p>
+      </footer>
+    </div>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
