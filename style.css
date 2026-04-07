@@ -68,9 +68,22 @@ p {
 
 /* Home View */
 #home-view {
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.bottom-actions {
+  width: 100%;
 }
 
 .logo {
@@ -126,6 +139,82 @@ header p {
 .primary-btn:hover, .primary-btn:active {
   background-color: var(--color-primary-dark);
   transform: translateY(-2px);
+}
+
+.bottom-actions {
+  width: 100%;
+  padding-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+/* Action Buttons (WhatsApp y Maps) */
+.action-buttons {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto 1.5rem;
+}
+
+.action-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1.25rem 0.75rem;
+  border-radius: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  flex: 1;
+  font-size: 0.85rem;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: var(--color-text);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.action-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+.whatsapp-btn {
+  background: rgba(37, 211, 102, 0.1);
+  border: 1px solid rgba(37, 211, 102, 0.2);
+  color: #128C7E;
+}
+
+.whatsapp-btn svg {
+  stroke: #128C7E;
+}
+
+.maps-btn {
+  background: rgba(219, 68, 55, 0.1);
+  border: 1px solid rgba(219, 68, 55, 0.2);
+  color: #DB4437;
+}
+
+.maps-btn svg {
+  stroke: #DB4437;
+}
+
+.action-btn:hover, .action-btn:active {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.15);
+}
+
+.whatsapp-btn:hover {
+  background: rgba(37, 211, 102, 0.15);
+}
+
+.maps-btn:hover {
+  background: rgba(219, 68, 55, 0.15);
 }
 
 /* Menus View */
